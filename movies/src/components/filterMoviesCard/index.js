@@ -13,6 +13,7 @@ import img from '../../images/pexels-dziana-hasanbekava-5480827.jpg'
 import React, {useState, useEffect}  from "react";
 import { getGenres } from "../../api/tmdb-api";
 
+
 const formControl = 
   {
     margin: 1,
