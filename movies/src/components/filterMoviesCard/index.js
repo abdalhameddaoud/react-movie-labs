@@ -43,6 +43,17 @@ export default function FilterMoviesCard(props) {
     handleChange(e, "genre", e.target.value)
   };
 
+// trying to add filter by year
+  const YearFilter = ({ year, setYear, years }) => (
+    <select value={year} onChange={(e) => setYear(e.target.value)}>
+      <option value="">All Years</option>
+      {years.map(yearOption => (
+        <option key={yearOption} value={yearOption}>{yearOption}</option>
+      ))}
+    </select>
+  );
+
+
   return (
     <Card 
       sx={{
