@@ -19,7 +19,6 @@ const NowPlayingPage = (props) => {
   }  
   const movies = data.results;
 
- 
 
   return (
     <PageTemplate

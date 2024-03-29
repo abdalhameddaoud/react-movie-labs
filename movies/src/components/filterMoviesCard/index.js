@@ -29,12 +29,12 @@ export default function FilterMoviesCard(props) {
     getGenres().then((allGenres) => {
       setGenres([genres[0], ...allGenres]);
     });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    
   }, [])
 
   const handleChange = (e, type, value) => {
     e.preventDefault()
-    props.onUserInput(type, value)   // NEW
+    props.onUserInput(type, value)   
   }
   const handleTextChange = e => {
     handleChange(e, "name", e.target.value)

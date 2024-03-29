@@ -11,6 +11,7 @@ import { useNavigate } from "react-router-dom";
 import { styled } from '@mui/material/styles';
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import logoImage from '../../images/DAOUD FILMS.png';
 
 
 const Offset = styled('div')(({ theme }) => theme.mixins.toolbar);
@@ -45,13 +46,11 @@ const SiteHeader = ({ history }) => {
 
   return (
     <>
-      <AppBar position="fixed" color="secondary">
+      <AppBar position="fixed" sx={{ backgroundColor: "#9e9e9e" }}>
         <Toolbar>
-          <Typography variant="h4" sx={{ flexGrow: 1 }}>
-            TMDB Client
-          </Typography>
+        <img src={logoImage} alt="Logo" style={{ marginRight: '20px', height: '50px' }} />
           <Typography variant="h6" sx={{ flexGrow: 1 }}>
-            All you ever wanted to know about Movies!
+                  
           </Typography>
             {isMobile ? (
               <>

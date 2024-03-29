@@ -21,8 +21,6 @@ const TopRated = (props) => {
   const TopRatedmovies = data.results;
 
   
-
-
   return (
     <PageTemplate
       title='Top Rated Movies'

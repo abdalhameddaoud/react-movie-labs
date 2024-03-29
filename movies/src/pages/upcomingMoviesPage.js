@@ -19,8 +19,6 @@ const UpcomingPage = (props) => {
   }  
   const movies = data.results;
 
- 
-
   return (
     <PageTemplate
       title='Upcoming Movies'

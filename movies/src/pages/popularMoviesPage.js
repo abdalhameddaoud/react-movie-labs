@@ -19,7 +19,7 @@ const PopularPage = (props) => {
   }  
   const movies = data.results;
 
- 
+
 
   return (
     <PageTemplate
